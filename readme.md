@@ -1,6 +1,6 @@
 # electron-eddystone-beacon-scanner
 
-![](https://cloud.githubusercontent.com/assets/124117/9676401/1cb7b630-5306-11e5-8114-442b35474a06.png)
+![](https://cloud.githubusercontent.com/assets/124117/9699181/12337bd6-5414-11e5-9bf8-5444b2b92244.png)
 
 > Eddystone beacon scanner for Mac.
 

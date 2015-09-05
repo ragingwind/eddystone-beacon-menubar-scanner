@@ -1,0 +1,38 @@
+{
+  "name": "electron-eddystone-beacon-scanner",
+  "productName": "Eddystone beacon scanner",
+  "version": "0.0.0",
+  "description": "Eddystone beacon scanner for Mac Tray",
+  "os": [
+    "darwin"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "ragingwind/electron-eddystone-beacon-scanner",
+  "author": {
+    "name": "ragingwind",
+    "email": "ragingwind@gmail.com",
+    "url": "ragingwind.me"
+  },
+  "engines": {
+    "iojs": ">=2.0.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "clean": "rm -rf build; mkdir -p build",
+    "build": "electron-packager . $npm_package_productName --icon=components/eddystone-logo.png --out=./build --platform=darwin --arch=all --prune --asar --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --ignore=.git  --version=0.30.4"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "electron-app"
+  ],
+  "devDependencies": {
+    "electron-packager": "^5.0.1",
+    "electron-prebuilt": "^0.30.4"
+  },
+  "dependencies": {
+    "eddystone-beacon-scanner": "^2.0.0"
+  }
+}
