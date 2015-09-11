@@ -1,7 +1,7 @@
 {
   "name": "electron-eddystone-beacon-scanner",
   "productName": "Eddystone beacon scanner",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Eddystone beacon scanner for Mac Tray",
   "os": [
     "darwin"
