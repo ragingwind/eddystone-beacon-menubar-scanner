@@ -28,8 +28,8 @@ $ npm run build
 
 ## Limited
 
-- It has been tested on Mac OSX Only
-- The application can only runs with iojs v2.0
+- It has been tested on Mac OS X Only
+- The application is only able to run on iojs v2.0
 
 ## License
 
