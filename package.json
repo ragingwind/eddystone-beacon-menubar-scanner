@@ -26,6 +26,9 @@
     "index.js"
   ],
   "keywords": [
+    "eddystone",
+    "eddystone-beacon",
+    "eddystone-beacon-scanner",
     "electron-app"
   ],
   "devDependencies": {
