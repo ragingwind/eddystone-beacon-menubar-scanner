@@ -1,4 +1,4 @@
-# electron-eddystone-beacon-scanner
+# eddystone-beacon-menubar-scanner
 
 ![](https://cloud.githubusercontent.com/assets/124117/9699181/12337bd6-5414-11e5-9bf8-5444b2b92244.png)
 

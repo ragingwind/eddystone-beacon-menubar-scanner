@@ -1,5 +1,5 @@
 {
-  "name": "electron-eddystone-beacon-scanner",
+  "name": "eddystone-beacon-menubar-scanner",
   "productName": "Eddystone beacon scanner",
   "version": "0.2.0",
   "description": "Eddystone beacon scanner for Mac Tray",
@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "repository": "ragingwind/electron-eddystone-beacon-scanner",
+  "repository": "ragingwind/eddystone-beacon-menubar-scanner",
   "author": {
     "name": "ragingwind",
     "email": "ragingwind@gmail.com",
