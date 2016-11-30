@@ -11,19 +11,19 @@
 ### Install dependencies
 
 ```
-$ npm install
+$ yarn install
 ```
 
 ### Run application
 
 ```
-$ npm start
+$ yarn start
 ```
 
 ### Build application
 
 ```
-$ npm run build
+$ yarn run build
 ```
 
 ## Limited
