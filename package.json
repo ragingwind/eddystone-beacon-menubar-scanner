@@ -15,12 +15,13 @@
     "url": "ragingwind.me"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "scripts": {
     "start": "electron .",
     "clean": "rm -rf build; mkdir -p build",
-    "build": "electron-packager . $npm_package_productName --icon=components/eddystone-logo.png --out=./build --platform=darwin --arch=all --prune --asar --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --ignore=.git  --version=0.30.4"
+    "build": "electron-packager . $npm_package_productName --icon=components/eddystone-logo.png --out=./build --platform=darwin --asar --ignore=.git",
+    "postinstall": "npm rebuild --runtime=electron --target=1.4.8 --disturl=https://atom.io/download/atom-shell --abi=50"
   },
   "files": [
     "index.js"
@@ -32,10 +33,9 @@
     "electron-app"
   ],
   "devDependencies": {
-    "electron-packager": "^5.0.1",
-    "electron-prebuilt": "^0.33.0"
+    "eddystone-beacon-scanner": "^3.0.0",
+    "electron": "1.4.8",
+    "electron-packager": "^8.3.0"
   },
-  "dependencies": {
-    "eddystone-beacon-scanner": "^2.0.0"
-  }
+  "dependencies": {}
 }

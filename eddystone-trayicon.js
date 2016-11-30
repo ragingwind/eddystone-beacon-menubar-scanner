@@ -1,8 +1,7 @@
 'use strict';
 
-const Menu = require('menu');
-const Tray = require('tray');
-const shell = require('shell');
+const {Menu, Tray, shell} = require('electron');
+// const shell = require('shell');
 
 function EddystoneTrayIcon(opts) {
 	opts = opts || {};
@@ -16,7 +15,7 @@ function EddystoneTrayIcon(opts) {
 	if (opts.iconForPressed) {
 		this.trayIcon.setPressedImage(opts.iconForPressed);
 	}
-	
+
 	this.opts = opts;
 	this.beacons = [];
 	this.refresh();
@@ -27,7 +26,7 @@ EddystoneTrayIcon.prototype.refresh = function () {
 
 	if (this.beacons.length > 0) {
 		this.trayIcon.setImage(this.opts.iconForFound);
-		
+
 		contextMenu = Menu.buildFromTemplate(this.beacons.map(function (beacon) {
 			return {
 				label: [
@@ -45,7 +44,7 @@ EddystoneTrayIcon.prototype.refresh = function () {
 
 		contextMenu = Menu.buildFromTemplate([{label: 'Not found'}]);
 	}
-	
+
 	this.trayIcon.setContextMenu(contextMenu);
 };
 
